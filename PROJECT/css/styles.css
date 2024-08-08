@@ -1,0 +1,72 @@
+
+/*This code is for styling body element*/
+body {
+    font-family: Arial, sans-serif;/* This code sets the font family for the body element */
+    margin: 0;/* This code sets the margin for the body element */
+    padding: 0;/* This code sets the padding for the body element */
+    box-sizing: border-box;/* This code sets the box-sizingfor the body element */
+}
+
+/*This code is for styling header, footer element*/
+header, footer {
+    background-color: darkblue;/* This code sets a dark blue background color for header and footer */
+    color: #fff;/* This code sets  color for header and footer */
+    padding: 10px 0;/* This code sets padding for header and footer */
+    text-align: center;/* This code sets text-align for header and footer */
+}
+
+/*This code is for styling nav ul element*/
+nav ul {
+    list-style-type: none;/* This code sets list-style-type for nav ul */
+    padding: 0;/* This code sets  padding for nav ul */
+}
+
+/*This code is for styling nav ul li element*/
+nav ul li {
+    display: inline;/* This code sets the list items in a single line for nav ul li */
+    margin-right: 10px;/* This code sets a right margin of 10px  for nav ul li */
+}
+
+/*This code is for styling nav ul li a element*/
+nav ul li a {
+    color: #fff;/* This code sets  color for nav ul li a */
+    text-decoration: none;/* This code sets  text-decoration for nav ul li a */
+}
+
+/*This code is for styling .container element*/
+.container {
+    padding: 20px;/* This code sets  padding for nav ul li a */
+}
+
+/*This code is for styling .product element*/
+.product {
+    border: 1px solid #ddd;/* This code sets  light gray border around the product */
+    margin: 10px;/* This code sets margin of 10px outside the product */
+    padding: 10px;/* This code sets  padding of 10px inside the product */
+    text-align: center;/* This code sets the text within the product */
+    width: 250px;/* This code sets  the width of the product */ 
+    display: inline-block;/* This code sets the product inline and allows setting width and height  */  
+}
+
+/*This code is for styling .product img element*/
+.product img {
+    width: auto;  /* This code sets the width of the image to auto */
+    height: auto;/* This code sets the height of the image to auto */
+}
+
+/*This code is for styling h2, h3 element*/
+h2, h3 {
+    margin-top: 0;/* This code sets the top margin for h2 and h3 elements */
+}
+
+/*This code is for styling footer element*/
+footer {
+    margin-top: 20px;/* This code sets the top margin for footer */
+}
+
+/*This code is for styling .container .product-container element*/
+.container .product-container {
+    display: flex;/* This code Displays the product container for .container .product-container */
+    flex-wrap: wrap;/* This code allows the items to wrap onto multiple lines for .container .product-container */
+    justify-content: center;/* This code centers the items within the container for .container .product-container */  
+}
