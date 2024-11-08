@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background Rectangle -->
+        <rect x="0" y="0" width="200" height="60" rx="10" fill="#0078D7">
+          <!-- Hover Effect for Background Rectangle -->
+          <animate attributeName="fill" from="#0078D7" to="#0056a3" begin="mouseover" end="mouseout" dur="0.3s" fill="freeze"/>
+        </rect>
+      
+        <!-- Button Text -->
+        <text x="100" y="35" fill="white" font-size="20" font-family="Arial" text-anchor="middle" dominant-baseline="middle">
+          Hover Me
+          <!-- Hover Effect for Text Scaling -->
+          <animateTransform attributeName="transform" type="scale" from="1 1" to="1.1 1.1" begin="mouseover" end="mouseout" dur="0.3s" fill="freeze" additive="sum"/>
+        </text>
+      </svg>
+</body>
+</html>
