@@ -1,0 +1,223 @@
+/* Basic Styling */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif; /* Modern and clean font */
+  }
+  
+  p, a, li, label, figcaption, td {
+    font-family: "Raleway", sans-serif; /* Elegant and readable font */
+    text-decoration: none;
+  }
+  
+  ul, ol, menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main Styling of The Website */
+  body {
+    margin: 0;
+    padding: 0;
+    background: url('./img/wallpaper.jpg') no-repeat center center fixed; /* Set wallpaper */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    color: #333333; /* Dark text color for readability */
+  }
+  
+  /* Optional Overlay for Better Contrast */
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+    z-index: -1; /* Send the overlay behind content */
+  }
+  
+  /* Header Styling */
+  header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    background-color: rgba(0, 61, 91, 0.8); /* Slightly transparent deep ocean blue */
+    backdrop-filter: blur(5px); /* Add blur for a frosted glass effect */
+  }
+  
+  header div img {
+    height: 80px;
+    object-fit: contain; /* Ensures logo fits without distortion */
+  }
+  
+  header menu li {
+    display: inline-block;
+    font-size: 1.2em;
+    margin-right: 1.5em;
+  }
+  
+  header menu li a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  header menu li a:hover {
+    color: #ff6363; /* Bright coral hover effect */
+    border-bottom: 2px solid #ff6363;
+  }
+  
+  /* Mast Section Styling */
+  .masthead {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .masthead h1 {
+    font-size: 3.5em;
+    color: #ff6363; /* Bright coral for headline */
+  }
+  
+  .masthead p {
+    font-size: 1.2em;
+    width: 70%;
+    margin: 10px auto 0 auto;
+    line-height: 1.8;
+  }
+  
+  .masthead p span {
+    font-size: 2.2em;
+    color: #ffd166; /* Golden highlight */
+  }
+  
+  /* Main Styling */
+  main {
+    padding: 5% 10%;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    border-radius: 10px; /* Rounded edges for the main container */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  main section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+  
+  main section img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures images scale without distortion */
+    margin: auto;
+  }
+  
+  main section h3 {
+    font-size: 2em;
+    color: #003d5b; /* Deep ocean blue */
+  }
+  
+  main section p {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #4a4a4a; /* Dark gray for readability */
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: rgba(0, 61, 91, 0.8); /* Semi-transparent deep ocean blue */
+    color: #ffffff;
+    padding: 3% 10%;
+  }
+  
+  footer section h2 {
+    text-align: center;
+    font-size: 2.2em;
+    font-family: "Lato", sans-serif;
+    color: #ffd166; /* Golden headline */
+  }
+  
+  footer .contact-form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  
+  footer .contact-form input,
+  footer .contact-form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  footer .contact-form textarea {
+    resize: none;
+    height: 120px;
+  }
+  
+  footer form .primary-btn {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #ff6363;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  footer form .primary-btn:hover {
+    background-color: #ffd166; /* Golden hover effect */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    header {
+      flex-wrap: wrap;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .masthead {
+      height: 60vh;
+      padding: 5%;
+      text-align: center;
+    }
+  
+    .masthead h1 {
+      font-size: 2.5em;
+    }
+  
+    .masthead p {
+      font-size: 1em;
+    }
+  
+    main section {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    main section img {
+      max-width: 80%;
+    }
+  
+    footer {
+      padding: 5%;
+    }
+  }
+  
